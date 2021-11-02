@@ -1,1 +1,118 @@
 
+<main class="main-cards">
+    <div class="cards">
+        <div class="card-single">
+            <div>
+                <!-- <h1 >{{chart["todayAvailable"]}}</h1> -->
+                <h2>123</h2>
+                <span>New</span>
+            </div>
+            <div>
+                <span class="bi bi-arrow-right-circle"></span>
+            </div>
+        </div>
+
+        <div class="card-single" style="background-color: #0c9c78">
+            <div>
+                <!-- <h1 style="color: white;">{{chart["todayInProgress"]}}</h1> -->
+                <h2 style="color: white;">23</h2>
+                <span style="color: white;">InProcess</span>
+            </div>
+            <div>
+                <span class="bi bi-arrow-repeat" style="color: white;"></span>
+            </div>
+        </div>
+
+        <div class="card-single" style="background-color: #6a1da1;">
+            <div>
+                <!-- <h1 style="color: white;">{{chart["totalSuccess"]}}</h1> -->
+                <h2 style="color: white;">1230</h2>
+                <span style="color: white;">Completed</span>
+            </div>
+            <div>
+                <span class="bi bi-bag-check" style="color: white;"></span>
+            </div>
+        </div>
+
+        <div class="card-single">
+            <div>
+                <!-- <h1>{{chart["totalClosed"]}}</h1> -->
+                <h2>13</h2>
+                <span>Pending</span>
+            </div>
+            <div>
+                <span class="bi bi-bag-x"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="cards">
+
+        <div class="card-single" style="background-color: #631046;">
+            <div>
+                <!-- <h1 style="color: white;">{{chart["todaySuccess"]}}</h1> -->
+                <h2 style="color: white;">1230</h2>
+                <span style="color: white;">TodayCompleted</span>
+            </div>
+            <div>
+                <span class="bi bi-check-all" style="color: white;"></span>
+            </div>
+        </div>
+        <div class="card-single" style="background-color: #d10fa7">
+            <div>
+                <!-- <h1 >{{chart["todayClosed"]}}</h1> -->
+                <h2 style="color: white;">34</h2>
+                <span style="color: white;">TodayClosed</span>
+            </div>
+            <div>
+                <span class="bi bi-bag-dash" style="color: white;"></span>
+            </div>
+        </div>
+
+        <div class="card-single" style="background-color: #cf4141">
+            <div>
+                <!-- <h1 style="color: white;">{{chart["todayFailure"]}}</h1> -->
+                <h2 style="color: white;">20</h2>
+                <span style="color: white;">TodayPending</span>
+            </div>
+            <div>
+                <span class="bi bi-calendar-x" style="color: white;"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card-single" style="background-color: green">
+            <div>
+                <!-- <h1 style="color: white;">{{chart["todaySuccess"]}}</h1> -->
+                <h2 style="color: white;">1230</h2>
+                <span style="color: white;">TotalCompleted</span>
+            </div>
+            <div>
+                <span class="bi bi-check2-circle" style="color: white;"></span>
+            </div>
+        </div>
+        <div class="card-single" style="background-color: #d17d0f">
+            <div>
+                <!-- <h1 >{{chart["todayClosed"]}}</h1> -->
+                <h2 style="color: white;">34</h2>
+                <span style="color: white;">TotalClosed</span>
+            </div>
+            <div>
+                <span class="bi bi-door-closed" style="color: white;"></span>
+            </div>
+        </div>
+
+        <div class="card-single" style="background-color: #cf4188">
+            <div>
+                <!-- <h1 style="color: white;">{{chart["todayFailure"]}}</h1> -->
+                <h2 style="color: white;">20</h2>
+                <span style="color: white;">TotalPending</span>
+            </div>
+            <div>
+                <span class="bi bi-exclamation-square" style="color: white;"></span>
+            </div>
+        </div>
+
+    </div>
+
+</main>
