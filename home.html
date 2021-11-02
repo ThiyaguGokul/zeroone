@@ -1,0 +1,90 @@
+<input type="checkbox" id="nav-toggle">
+<div class="sidebar">
+    <div class="siderbar-brand">
+        <!-- <h2><span class="lab la-accusoft"></span> -->
+            <h2>
+                <span class="bi bi-book-fill"></span>&nbsp;
+               
+            <span>iRoBo</span>
+        </h2>
+    </div>
+    <div class="sidebar-menu">
+        <ul>
+            <!-- <li>
+                <a [routerLink]="['/login']">
+                    <span>login</span></a>
+            </li> -->
+            <li>
+                <a [routerLink]="['/dashboard']" class="active">
+                    <span class="bi bi-card-checklist"></span>
+                    <span>DashBoard</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/request']">
+                    <span class="bi bi-arrows-expand"></span>
+                    <span>Requests</span></a>
+            </li>
+            <li>
+                <a [routerLink]="['/statusChange']">
+                    <span class="bi bi-people-fill"></span>
+                    <span>Status</span></a>
+            </li>
+            <!-- <li>
+                <a [routerLink]="['/roles']">
+                    <span class="bi bi-person-check-fill"></span>
+                    <span>Roles</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+
+                <a class="d-flex align-items-center  text-decoration-none dropdown-toggle" id="dropdownUser1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-key-fill"></i> <span>Credentials</span>
+                </a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" [routerLink]="['/idevicecredentials']">IDEVICE</a></li>
+                    <li><a class="dropdown-item" [routerLink]="['/ssfcredentials']">SSF</a></li>
+                </ul>
+
+            </li> -->
+            <li>
+                <a [routerLink]="['/report']">
+                    <span class="bi bi-file-earmark-arrow-down-fill"></span>
+                    <span>Reports</span> </a>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-content">
+    <header>
+        <h6>
+            <label for="nav-toggle">
+                <span class="bi bi-box-arrow-in-left"></span>
+            </label>
+            iRoBo Support
+        </h6>
+        <!-- <h6>
+        <div class="people" *ngFor="let user of users">
+                <div class="bi bi-file-earmark-arrow-down-fill">
+                    <img src="http://i.stack.imgur.com/e2S63.png" width="20" alt="{{getShortName(user.full_name)}}" />
+                </div>
+                <div class="s-name">
+                    {{getShortName(user.full_name)}}
+                </div>
+            </div>
+        </h6> -->
+        <div class="user-wrapper">
+            <div>
+                <h6>standard</h6>
+                <h6>chartered</h6>
+            </div>
+        </div>
+    </header>
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+    <footer class="foot">ZeroOne Technologies Pvt Ltd</footer>
+</div>
