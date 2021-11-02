@@ -1,0 +1,237 @@
+
+:root {
+    --main-color : #DD2F6E;
+    --color-dard: #1D2231;
+    --text-grey: #8390A2;
+}
+.wel{
+    width: fit-content;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.sidebar{
+    width: 150px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #DD2F6E;//#b3109d
+    z-index: 100;
+    transition: width 200ms;
+    transition-property: background;
+}
+
+
+.siderbar-brand{
+    
+    height: 90px;
+    padding: 1rem 0rem 1rem 1.5rem;
+    color: #fff;
+}
+.siderbar-brand span {
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 0rem;
+}
+.sidebar-menu{
+    margin-top: 1rem;
+}
+.sidebar-menu li{
+   
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 0.2rem;
+}
+.sidebar a:hover{
+    background: #b3109d;
+   
+}
+.sidebar-menu a{
+    
+    padding-left: 1rem;
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+}
+.sidebar-menu a span:first-child{
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+#nav-toggle:checked + .sidebar{
+    width: 80px;
+}
+
+#nav-toggle:checked + .sidebar .siderbar-brand,
+#nav-toggle:checked + .sidebar li {
+    padding-left: 1rem;
+    text-align: center;
+}
+#nav-toggle:checked + .sidebar li a{
+    padding-left: 0rem;
+}
+
+#nav-toggle:checked + .sidebar .siderbar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child{
+    display: none;
+}
+.sidebar-menu a.active{
+    /* background: #fff;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    color:  #DD2F6E;
+    border-radius: 30px 0px 0px 30px; */
+}
+#nav-toggle:checked ~ .main-content{
+    margin-left: 65px;
+}
+#nav-toggle:checked ~ .main-content header{
+   width: calc(100% - 80px);
+   left: 80px;
+}
+.main-content{
+    transition: margin-left 50ms;
+    margin-left: 150px; 
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    position: fixed;
+    left: 150px;
+    width: calc(100% - 150px);
+    top: 0;
+    z-index: 100;
+    transition: left 200ms;
+    background-color: #1057b3;
+}
+
+#nav-toggle{
+    display: none;
+}
+
+header h6{
+    color: white;
+}
+header label span{
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+.user-wrapper{
+    display: flex;
+    align-items: center;
+}
+user-wrapper img {
+    border-radius: 70%;
+    margin-right: 3rem;
+}
+.user-wrapper h6{
+    margin-left: 200px;
+    color: white;
+}
+.user-wrapper small{
+    display:inline-block;
+    color:white;
+    margin-top: -10px;
+}
+main{
+    
+    margin-top: 10px;
+   padding: 2rem 1.5rem; 
+    /* background: #f1f5f9; */
+    min-height: calc(100vh - 40px);
+    background-position: center; 
+    
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+    
+}
+
+.card-single{
+    display: flex;
+    justify-content: space-between;
+    /* background: #fff; */
+    padding: 2rem;
+    border-radius: 2px;
+    
+}
+
+.card-single div:last-child span{
+    font-size: 3rem;
+    color: #DD2F6E;
+}
+.card-single div:first-child span{
+    color: grey;
+}
+.card-single:last-child{
+    background: #DD2F6E;
+}
+.card-single:last-child h1,
+.card-single:last-child div:last-child span,
+.card-single:last-child div:first-child span{
+    color: #fff;
+}
+
+/* @media only screen and (mac-width:1200px){
+    .sidebar{
+        width: 70px;
+    }
+    
+     .sidebar .siderbar-brand,
+     .sidebar li {
+        padding-left: 1rem;
+        text-align: center;
+    }
+
+    .sidebar li a{
+        padding-left: 0rem;
+    }
+    
+    .sidebar .siderbar-brand h2 span:last-child,
+     .sidebar li a span:last-child{
+        display: none;
+    }
+    
+   .main-content{
+        margin-left: 70px;
+    }
+     .main-content header{
+       width: calc(100% - 70px);
+       left: 70px;
+    }
+} */
+
+.dropdown-menu{
+    background-color: #DD2F6E;
+}
+
+.foot{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.1rem;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        position: fixed;
+        left: 150px;
+        width: calc(100% - 150px);
+        bottom: 0;
+        z-index: 100;
+        transition: left 200ms;
+        background-color: #f7ab09;
+        text-align: center;
+        color: white;
+}
+#nav-toggle:checked ~ .main-content footer{
+    width: calc(100% - 65px);
+    left: 80px;
+ }
