@@ -6,12 +6,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RequestComponent } from './request/request.component';
 import { StatusComponent } from './status/status.component';
 import { ReportComponent } from './report/report.component';
+import { HomeComponent } from './home/home.component';
+import { AuthgaurdserviceService } from './authgaurdservice.service';
 
 const routes: Routes = [
-  {path:'dashboard',component:DashboardComponent},
-  {path:'request',component:RequestComponent},
-  {path:'statusChange',component:StatusComponent},
-  {path:'report',component:ReportComponent}
+  {path:'',redirectTo:'login',pathMatch:'full'},
+  {path:'login',component:LoginComponent},
+  {path:'dashboard',component:DashboardComponent,canActivate:[AuthgaurdserviceService]},
+  {path:'request',component:RequestComponent,canActivate:[AuthgaurdserviceService]},
+  {path:'statusChange',component:StatusComponent,canActivate:[AuthgaurdserviceService]},
+  {path:'report',component:ReportComponent,canActivate:[AuthgaurdserviceService]},
+  {path:'home',component:HomeComponent,canActivate:[AuthgaurdserviceService]}
 ];
 
 @NgModule({
