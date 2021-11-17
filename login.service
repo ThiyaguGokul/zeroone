@@ -1,0 +1,32 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+
+@Injectable({
+  providedIn: 'root'
+})
+export class LoginService {
+
+  psid:'';
+  password:'';
+  app_url="http://localhost:8080/iRoBoSupport/main/login";
+  constructor(private _http:HttpClient) { }
+
+  public loginAuth(loginUser:any){
+    console.log(loginUser);
+    return this._http.post<any>(this.app_url,loginUser);
+  }
+
+  isUserLoggedIn() {
+  // let user = sessionStorage.getItem(this.psid);
+  // console.log('psid : '+user);
+  // console.log('usercheck : '+(user === null));
+  return false;
+  // return true;
+}
+
+logOut() {
+  // let userpsid=this.loginAuth(this.loginUser);
+  // sessionStorage.removeItem('psid');
+}
+}
